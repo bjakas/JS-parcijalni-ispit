@@ -37,6 +37,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+  padding-bottom: 40px;
 }
 .container li {
   list-style-type: none;
