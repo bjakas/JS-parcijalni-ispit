@@ -8,28 +8,27 @@
       opacity: 1;
   }
 }
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
+
 body {
-  height: 100%;
-  line-height: 1.47059;
-  font-weight: 400;
-  letter-spacing: -.022em;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   background: linear-gradient(
   -30deg, #d754ad 0%, #d754ad 10%, #f96785 62%, #fe7333 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-style: normal;
   color: #f5f5f7;
 }
+
 .container {
   animation: appear-animation 1s ease-in-out 0s 1 normal forwards;
   opacity: 0;
@@ -37,26 +36,27 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
+
 .container li {
   list-style-type: none;
 }
 li {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 h1, input {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25;
 }
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 img {
-  width: 120px;
-  height: 120px;
-  margin-top: 60px;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-top: 3.75rem;
   background-color: white;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #f0f4f8, -7px -7px 15px #f0f4f8;
@@ -67,12 +67,12 @@ img:hover {
   transform: rotate(1turn) scale(1.1);
 }
 input[type=text] {
-  width: 300px;
-  height: 40px;
+  width: 18.75rem;
+  height: 2.5rem;
   border-color: transparent;
-  border-radius: 25px;
+  border-radius: 1.56rem;
   outline: transparent;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #e8e8ed;
   color: black;
 }
@@ -80,5 +80,60 @@ input[type=text]:focus {
   box-shadow: 2px 2px 10px #f0f4f8, -2px -2px 10px #f0f4f8;
 }
 ul {
-  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  html {
+    font-size: 18px; 
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    font-size: 16px; 
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 14px; 
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 12px; 
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 12px; 
+  }
 }
