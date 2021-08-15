@@ -9,11 +9,13 @@
 
 <body>
   <div id="app" class="container">
-    <img src="itunes.png" alt="logo for iTunes">
+    <img src="itunes.png" alt="logo for iTunes" class="logo">
     <h1>iTunes Music Search</h1>
-    <input type="text" data-input-field class="input-color-border">
-    <div data-loading-field></div>
-    <div data-error-field></div>
+    <div class="input-area">
+      <input type="text" data-input-field class="input-color-border">
+      <div data-loading-field></div>
+      <div data-error-field></div>
+    </div>
     <ul data-result-field></ul>
   </div>
   <script src="./app.min.js"></script>

@@ -42,6 +42,7 @@ body {
 .container li {
   list-style-type: none;
 }
+
 li {
   font-size: 1rem;
 }
@@ -50,22 +51,26 @@ h1, input {
   margin-top: 1.25rem;
   margin-bottom: 1.25;
 }
+
 h1 {
   font-size: 3rem;
 }
-img {
+
+.logo {
+  transition: 3s;
   width: 7.5rem;
   height: 7.5rem;
   margin-top: 3.75rem;
   background-color: white;
   border-radius: 50%;
   box-shadow: 7px 7px 10px #f0f4f8, -7px -7px 15px #f0f4f8;
-  transform: translate();
 }
-img:hover {
+
+.logo:hover {
   transition: 3s;
   transform: rotate(1turn) scale(1.1);
 }
+
 input[type=text] {
   width: 18.75rem;
   height: 2.5rem;
@@ -76,11 +81,26 @@ input[type=text] {
   background-color: #e8e8ed;
   color: black;
 }
+
 input[type=text]:focus {
   box-shadow: 2px 2px 10px #f0f4f8, -2px -2px 10px #f0f4f8;
 }
+
 ul {
   margin-top: 1.25rem;
+}
+
+.input-area {
+  position: relative;
+  margin: 0;
+}
+
+[data-loading-field], [data-error-field] {
+  position: absolute;
+  top: 6.25rem;
+  right: 1rem;
+  left: 1rem;
+  text-align: center;
 }
 
 /* 
